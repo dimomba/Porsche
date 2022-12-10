@@ -1,0 +1,548 @@
+/*!!!!!!!!!!!!!HEADER!!!!!!!!!!!!!!!---->*/
+body {
+    margin: 0;
+    margin-top: 20px;
+}
+* {
+    /*font-family: 'Montserrat', sans-serif;*/
+    font-family: 'DM Sans', sans-serif;
+}
+
+.lineporsche {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 160px;
+    height: 104px;
+}
+
+.floating-button {
+    text-decoration: none;
+    display: inline-block;
+    width: 190px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-top: 20px;
+    font-size: 16px;
+    text-align: center;
+    color: #000000;
+    background: #e4e4e5;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+    transition: .3s;
+}
+.floating-button:hover {
+    background: linear-gradient(90deg, rgb(253, 255, 225) 0%, rgb(255, 231, 231) 100%);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.5);
+    color: rgb(0, 0, 0);
+    transform: translateY(-7px);
+}
+
+.adressinheader {
+    position: absolute;
+    right: 12%;
+    top: 45px;
+    color: black;
+    text-decoration: none;
+}
+.phoneinheader {
+    position: absolute;
+    left: 12%;
+    top: 25px;
+    color: black;
+    text-decoration: none;
+}
+.emailinheader {
+    position: absolute;
+    left: 12%;
+    top: 70px;
+    color: black;
+    text-decoration: none;
+}
+/*.adressinheader:hover, .phoneinheader:hover, .emailinheader:hover {
+    color: rgb(173, 2, 2);
+}*/
+
+.adressinheader img {
+    width: 26px;
+    position: relative;
+    top: 6px;
+    margin-right: 4px;
+}
+@media (max-width: 740px) {
+    .adressinheader, .phoneinheader, .emailinheader {
+        display: none;
+    }
+}
+
+
+.menuburger *{
+    margin: 0;
+    padding: 0;
+}
+.menuburger {
+    margin-top: 16px;
+    margin-bottom: 32px;
+}
+.menuburger ul {
+    list-style: none;
+}
+
+
+
+.menuburger > ul {
+    display: flex;
+    justify-content: center;
+}
+
+.menuburger > ul li {
+    position: relative;
+}
+
+.menuburger > ul li > a i.fa { /*???*/
+    position: absolute;
+    top: 15px;
+    left: 12px;
+    font-size: 18px;
+}
+
+.menuburger > ul li a {
+    display: block;
+    background: #e4e4e5;
+    padding: 15px 5vw 15px 5vw;
+    font-size: 28px;
+    color: #000000;
+    text-decoration: none;
+    transition: all .4s ease;
+    
+}
+
+
+.menuburger li a:hover {
+    background: rgb(213, 215, 215);
+    color: #000000;
+    box-shadow: 1px 5px 10px -5px black;
+    transition: all 0.4s ease;
+}
+.menuburger li ul {
+    position: absolute;
+    width: 100%;
+    display: none;
+}
+
+
+
+.modellistlink {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.serviceslink {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+}
+.contactslink {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.list718 {
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid rgb(0, 0, 0);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.list911 {
+    border-right: 1px solid black;
+    border-left: 1px solid rgb(0, 0, 0);
+}
+.listtaycan {
+    border-right: 1px solid rgb(0, 0, 0);
+    border-left: 1px solid rgb(0, 0, 0);
+}
+.listpanamera {
+    border-right: 1px solid black;
+    border-left: 1px solid rgb(0, 0, 0);
+}
+.listmacan {
+    border-right: 1px solid black;
+    border-left: 1px solid rgb(0, 0, 0);
+}
+.listcayenne {
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid rgb(0, 0, 0);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.menuburger li > ul li a {
+    padding: 10px;
+    text-transform: none;
+    background: #e4e4e5;
+}
+
+.menuburger li:hover > ul {
+    display: block;
+    z-index: 10;
+}
+.menuburger [type="checkbox"], .menuburger label.toggleSubmenu{
+    display: none;
+}
+
+.menu-button-container {
+    display: none;
+    height: 32px;
+    width: 32px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+  
+#menu-toggle {
+    display: none;
+}
+  
+.menu-button, .menu-button::before, .menu-button::after {
+    display: block;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    transition: transform 400ms;
+    border-radius: 2px;
+}
+  
+.menu-button::before {
+    content: '';
+    margin-top: -8px;
+}
+  
+.menu-button::after {
+    content: '';
+    margin-top: 8px;
+}
+  
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+    margin-top: 0;
+    transform: rotate(45deg);
+}
+  
+#menu-toggle:checked + .menu-button-container .menu-button {
+    background: rgba(0, 0, 0, 0);
+}
+  
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+    margin-top: 0;
+    transform: rotate(-45deg);
+}
+
+
+@media (max-width: 850px) {
+    .menu-button-container {
+        display: flex;
+        position: absolute;
+        float: right;
+        right: 5%;
+        top: 8em;
+    }
+
+    .menuburger {
+        overflow: hidden;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .menuburger ul {
+        display: block;
+        max-height: 0px;
+        transition: max-height 0.3s;
+    }
+    input.menutogglefromtask2:checked ~ ul, input.toggleSubmenu:checked ~ ul {
+        display: block;
+        position: relative;
+        max-height: 1600px;
+        transition: max-height 1s ease-in;
+    }
+    .menuburger label.toggleSubmenu {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        display: block;
+    }
+    input.toggleSubmenu:checked ~ a {
+        background: black;
+        color: #fff;
+        
+    }
+    .menuburger li a:hover {
+        background: rgb(213, 215, 215);
+        color: #000000;
+        box-shadow: none;
+        transition: all 0.4s ease;
+    }
+
+
+    .modellistlink {
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        border-left: 1px solid black;
+        border-top: 1px solid black;
+        border-right: 1px solid black;
+        border-bottom: none;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+        text-align: center;
+    }
+    .serviceslink {
+        border-bottom: none;
+        border-right: 1px solid black;
+        text-align: center;
+    }
+    .contactslink {
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 8px;
+        text-align: center;
+    }
+
+    
+    .menuburger li:hover > ul {
+        display: none;
+    }
+    input.toggleSubmenu:checked ~ ul {
+        display: block;
+        position: relative;
+        max-height: 800px;
+        transition: max-height .5s ease-in;
+    }
+    .list718 {
+        border-top-right-radius: 0px;
+        border-top-left-radius: 0px;
+    }
+    .modellistlink:hover {
+        background: rgb(213, 215, 215);
+        color: #000000;
+        box-shadow: none;
+        transition: all 0.4s ease;
+    }
+}
+
+@media (max-width: 600px) {
+    .menu-button-container {
+        right: 3%;
+    }
+}
+
+@media (max-width: 460px) {
+    .menu-button-container {
+        right: 1%;
+    }
+}
+@media (max-width: 320px) {
+    .menu-button-container {
+        right: 0;
+    }
+}
+
+/*<---!!!!!!!!!!!!!HEADER!!!!!!!!!!!!!!!*/
+
+
+
+
+
+/*!!!!!!!!!!!!!FOOTER!!!!!!!!!!!!!!!--->*/
+footer {
+    display: flex;
+    position: relative;
+    height: auto;
+    margin-top: 64px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    font-size: 16px;
+    background: rgb(25,31,34);
+    color:#ffffff;
+    justify-content: center;
+}
+footer .container {
+    display: grid;
+    grid-template-columns: 1fr 0.98fr 1.35fr 1fr;
+    column-gap: 16px;
+    width: 80%;
+}
+footer .container .unit .h2 {
+    position: relative;
+    font-weight: 500;
+    display: block;
+    font-size: 1.5em;
+    margin-top: 0.83em;
+    margin-bottom: 0.8em;
+    margin-left: 0;
+    margin-right: 0;
+}
+footer .container .unit .h2::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 64px;
+    height: 2px;
+    background: rgb(255, 255, 255);
+}
+
+
+.infoaboutus, .infoservice {
+    margin-top: 10px;
+}
+.adressinfooter > div {
+    margin-top: 4px;
+}
+.unit div a, .unit .h2 a {
+    text-decoration: none;
+    color: white;
+}
+.unit div a:hover, .unit .h2 a:hover {
+    color: rgb(173, 2, 2);
+}
+.adressinfooter div {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    margin-bottom: 16px;
+    column-gap: 10px;
+    align-items: center;
+}
+.adressinfooter .adres img {
+    height: 30px;
+    width: 30px;
+    filter: invert(100%);
+    display:block;
+    margin:auto;
+}
+.adressinfooter .phonenumber img, .adressinfooter .mail img {
+    height: 20px;
+    width: 20px;
+    filter: invert(100%);
+    display:block;
+    margin:auto;
+}
+
+@media (max-width: 1180px) {
+    footer .container {
+        grid-template-columns: 1.5fr 1fr;
+        width: 90%;
+    }
+}
+@media (max-width: 1000px) {
+    footer .container {
+        width: 96%;
+    }
+    .adressinheader {
+        right: 5%;
+    }
+    .phoneinheader, .emailinheader {
+        left: 5%;
+    }
+
+}
+@media (max-width: 768px) {
+    footer .container {
+        grid-template-columns: 1fr;
+        width: 97%;
+    }
+}
+
+
+
+/*!!!!!!!!!BUTTONS!!!!!!!!!!--->*/
+.socialbuttons {
+    display: flex;
+    justify-content: center;
+}
+.social-icons-4 {
+    /*display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    list-style: none;*/
+    display: grid;
+    list-style: none;
+    grid-template-columns: repeat(5, 48px);
+}
+.social-icons-4 a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background: #efefef;
+    text-align: center;
+    margin-top: 16px;
+    /*position: relative;
+    margin: 2px;
+    margin-top: 16px;
+    text-align: center;
+    font-size: 32px;
+    color: #2d6ba1;
+    transition: 0.5s;*/
+
+}
+.social-icons-4 a img {
+    width: 24px;
+    height: 24px;
+    margin-top: 8px;
+}
+.social-icons-4 a img {
+    z-index: 2;
+    position: relative;
+    line-height: 40px;
+}
+
+.social-icons-4 a:after {
+    content: '';
+    display: block;
+    position: relative;
+    border-radius: 100%;
+    width: 0;
+    height: 0;
+    transition: 0.3s;
+    top: -37px;
+    left: 50%;
+}
+.social-icons-4 a:hover:after {
+    width: 40px;
+    height: 40px;
+    left: 0px;
+}
+.social-icons-4 .vk:hover:after, .social-icons-4 .vk:after {
+    background: linear-gradient(315deg, #8fbdf9, #002fff);
+}
+.social-icons-4 .yt:hover:after, .social-icons-4 .yt:after {
+    background: linear-gradient(315deg, #bc0000, #ff5353);
+}
+.social-icons-4 .instgrm:hover:after, .social-icons-4 .instgrm:after {
+    background: linear-gradient(235deg, #9400e9, #ffcc5f);
+}
+.social-icons-4 .tlgrm:hover:after, .social-icons-4 .tlgrm:after {
+    background: linear-gradient(315deg, #8fbdf9, #6481ff);
+}
+.social-icons-4 .whtspp:hover:after, .social-icons-4 .whtspp:after {
+    background: linear-gradient(315deg, #6ddcce, #00ff48);
+}
+@media (max-width: 768px) {
+    footer .container .unit .h2 {
+        margin-top: 0.8em;
+    }
+}
+/*<---!!!!!!!!!BUTTONS!!!!!!!!!!*/
+
+/*<---!!!!!!!!!FOOTER!!!!!!!!!!!*/
