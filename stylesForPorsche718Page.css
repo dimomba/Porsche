@@ -1,0 +1,179 @@
+/*!!!!!!!!!PORSCHEMODEL_._._!!!!!!!!!!!--->*/
+.containerforporsche718page {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.slide-container .prev, .slide-container .next {
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    width: auto;
+    text-decoration: none;
+    margin-top: -22px;
+    padding: 16px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 30px;
+    transition: all 0.6s ease;
+    user-select: none;
+}
+.slide-container .prev {
+    border-radius: 0 3px 3px 0;
+}
+.slide-container .next {
+    border-radius: 3px 0 0 3px;
+}
+
+.slide-container .prev:hover, .slide-container .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+.slide-container .prev {
+    left: 0px;
+}
+
+.slide-container .next {
+    right: 0px;
+}
+
+.dots-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dots-container .dot {
+    cursor: pointer;
+    margin: 5px;
+    width: 20px;
+    height: 20px;
+    color: rgb(181, 181, 181);
+    border-radius: 50%;
+    background-color: rgb(181, 181, 181);
+}
+
+.dots-container .dot.active {
+    border: 2px solid rgb(0, 0, 0);
+}
+
+
+.slide-container, .dots-container {
+    width: 100%;
+}
+.slide-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    position: relative;
+}
+
+.slide-container .slide {
+    display: none;
+    width: 100%;
+}
+
+.slide-container .slide.fade {
+    animation: fade 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+.slide-container .slide img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px -5px black;
+}
+
+.headerofnameofmodel {
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.firstheaderofinfoaboutmodel {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    margin-top: 16px;
+}
+.secondheaderofinfoaboutmodel {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    margin-top: 24px;
+}
+.textinfoaboutmodel ul {
+    padding-left: 16px;
+    list-style-type: disc;
+}
+.textinfoaboutmodel ul li {
+    margin-bottom: 4px;
+}
+
+.containertechnicalofmodel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.containertechnicalofmodel .headeroftechnicalofmodel {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    margin-top: 24px;
+}
+.containertechnicalofmodel .gridtechnical {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 16px;
+    column-gap: 10%;
+}
+.containertechnicalofmodel .gridtechnical .character {
+    font-size: 20px;
+}
+.character {
+    display: flex;
+    justify-content: center;
+}
+.containerforporsche718page .textinfoaboutmodel a {
+    text-decoration: none;
+    color: black;
+}
+.containerforporsche718page .textinfoaboutmodel a:hover {
+    color: rgb(173, 2, 2);
+}
+@media (max-width: 800px) {
+    .containerforporsche718page {
+        width: 95%;
+    }
+    .slide-container .prev, .slide-container .next {
+        color: rgba(255, 255, 255, 0.762);
+    }
+}
+@media (max-width: 680px) {
+    .containertechnicalofmodel .gridtechnical {
+        column-gap: 5%;
+    }
+    .containerforporsche718page {
+        width: 97%;
+    }
+}
+@media (max-width: 600px) {
+    .containertechnicalofmodel .gridtechnical {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 4%;
+    }
+}
+@media (max-width: 420px) {
+    .containertechnicalofmodel .gridtechnical {
+        grid-template-columns: 1fr;
+    }
+    .character {
+        justify-content: start;
+    }
+}
+/*<---!!!!!!!!!PORSCHEMODEL_._._!!!!!!!!!!!*/

@@ -1,0 +1,37 @@
+/*!!!!!!!!!CONTACTS!!!!!!!!!!!--->*/
+.containerofyandexcard {
+    width: 100%;
+}
+.containerforcontactspage {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (max-width: 530px) {
+    .containerforcontactspage {
+        width: 95%;
+    }
+}
+.containerforcontactspage .hh2 {
+    font-weight: 500;
+    font-size: 24px;
+    margin-top: 24px;
+    margin-bottom: 16px;
+}
+.containerforcontactspage div a {
+    text-decoration: none;
+    color: black;
+}
+.containerforcontactspage div a:hover {
+    color: rgb(173, 2, 2);
+}
+.containerforcontactspage div {
+    margin-top: 4px;
+}
+.containerforcontactspage .nameofporschecenter {
+    margin-bottom: 16px;
+}
+.containerforcontactspage .graphicofworking {
+    margin-top: 20px;
+}
+/*<---!!!!!!!!!CONTACTS!!!!!!!!!!!*/
