@@ -2,7 +2,7 @@
 body {
     margin: 0;
     margin-top: 20px;
-    overflow-y:scroll;
+    overflow-y: auto;
 }
 * {
     /*font-family: 'Montserrat', sans-serif;*/
