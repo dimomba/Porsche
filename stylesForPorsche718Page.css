@@ -108,6 +108,7 @@
 .textinfoaboutmodel ul {
     padding-left: 16px;
     list-style-type: disc;
+    margin-bottom: 1px;
 }
 .textinfoaboutmodel ul li {
     margin-bottom: 4px;
