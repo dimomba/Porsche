@@ -519,7 +519,6 @@ footer .container .unit .h2::before {
 }
 .social-icons-4 .tlgrm:hover {
     background: linear-gradient(315deg, #8fbdf9, #6481ff);
-    transition: 0.5s;
 }
 .social-icons-4 .whtspp:hover {
     background: linear-gradient(315deg, #6ddcce, #00ff48);
