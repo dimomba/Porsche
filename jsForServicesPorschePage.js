@@ -1,8 +1,8 @@
 const testsBtns = document.querySelectorAll('.closedAfterClick');
-const list = document.querySelector('input.toggleSubmenu');
+const list = document.getElementById('sub_m1');
 for(let btnItem of testsBtns) {
     btnItem.addEventListener("click", function() {
-        document.querySelector('input.toggleSubmenu').checked = false;
-        document.querySelector('input.menutogglefromtask2').checked = false;
+        document.getElementById('sub_m1').checked = false;
+        document.getElementById('menu-toggle').checked = false;
     });
 }
