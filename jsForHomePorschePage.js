@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", init(currentSlide))
 
 const next = () => {
     currentSlide >= slides.length - 1 ? currentSlide = 0 : currentSlide++
-    init(currentSlide)
+    init(currentSlide) 
 }
 
 const prev = () => {
