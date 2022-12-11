@@ -25,9 +25,8 @@ const prev = () => {
     init(currentSlide)
 }
 
-document.querySelector(".next").addEventListener('click', next)
-
-document.querySelector(".prev").addEventListener('click', prev)
+document.getElementById("next").addEventListener('click', next)
+document.getElementById("prev").addEventListener('click', prev)
 
 setInterval(() => {
     next();
